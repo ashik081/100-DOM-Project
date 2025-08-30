@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.counter-container {
+  background-color: #fff;
+  padding: 20px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.counter-container button {
+  width: 80px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color 0.2s;
+}
+
+.counter-container button:hover {
+  background-color: #0056b3;
+}
+
+.counter-container input {
+  width: 80px;
+  height: 50px;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.counter-container button:hover:enabled {
+  background-color: #0056b3;
+}
+
+/* Disabled button effect 
+eta korle logic deyar por order/btn click limit sesh hobar por btn er opacity kome jay and mouse cursor not allowed hoye jay .. */
+
+.counter-container button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
