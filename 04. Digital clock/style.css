@@ -1,0 +1,63 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Clock Container */
+.clock-container {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 30px 50px;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Clock Flex */
+.clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Time Box */
+.time-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px 25px;
+  border-radius: 15px;
+  text-align: center;
+  min-width: 80px;
+}
+
+.time-box span {
+  display: block;
+}
+
+#hours,
+#minutes,
+#seconds {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00ffea;
+}
+
+.label {
+  font-size: 0.9rem;
+  color: #ffde00;
+  margin-top: 5px;
+}
+
+.ampm-box span {
+  font-size: 2rem;
+  color: #ff6f61;
+}
